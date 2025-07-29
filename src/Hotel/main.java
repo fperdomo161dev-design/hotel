@@ -23,15 +23,20 @@ public class main {
         // Solicitar cédula
         System.out.print("Ingrese la cédula del cliente: ");
         String cedula = sc.nextLine();
+        
+        System.out.println("ingrese numero telefonico");
+        String numCelular = sc.nextLine();
 
         // Crear un objeto Cliente con los datos ingresados
-        Cliente cliente1 = new Cliente(nombre, cedula);
+        Cliente cliente1 = new Cliente(nombre, cedula, numCelular);
 
         // Mostrar la información usando el método de la clase Cliente
         cliente1.mostrarInformacionCliente();
 
         // Cerrar el scanner
         sc.close();
+        
+       
     }
 }
     

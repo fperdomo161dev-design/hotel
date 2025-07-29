@@ -12,10 +12,12 @@ public class Cliente {
  private String nombre;
  //Atributo para agregar cedula
  private String cedula;
+ private String numCelular;
  //constructor que recibe nombre y cedula
- public Cliente (String nombre, String cedula) {
+ public Cliente (String nombre, String cedula, String numCelular) {
      this.nombre = nombre;
      this.cedula = cedula;
+     this.numCelular = numCelular;
  }
  //metodos
  public String getnombre (){
@@ -34,9 +36,16 @@ public class Cliente {
      this.cedula = cedula;
  }
  
+ public String getnumCelular (){
+     return numCelular;
+ }
+ private void setnumCelular (String numCelular) {
+  
+     this.numCelular = numCelular;
+ }
  public void mostrarInformacionCliente() {
      
-     System.out.println("cliente:" +nombre+ "- cedula:" +cedula);
+     System.out.println("cliente:" +nombre+ "- cedula:" +cedula+ "- Numero celular: " +numCelular);
  }
  
  
