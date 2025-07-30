@@ -7,17 +7,23 @@ package Hotel;
  *
  * @author User
  */
+import java.time.LocalDate;
+
+
 public class Cliente {
- //Atributo para agregar nombre    
+ //Atributo para agregar informacion  
  private String nombre;
- //Atributo para agregar cedula
  private String cedula;
  private String numCelular;
- //constructor que recibe nombre y cedula
- public Cliente (String nombre, String cedula, String numCelular) {
+ private LocalDate FechaIngreso;
+ private LocalDate FechaSalida;
+ //constructor que recibe nombre, cedula , celular , fecha ingreso y salida
+ public Cliente (String nombre, String cedula, String numCelular,LocalDate FechaIngreso,LocalDate FechaSalida) {
      this.nombre = nombre;
      this.cedula = cedula;
      this.numCelular = numCelular;
+     this.FechaIngreso = FechaIngreso;
+     this.FechaSalida = FechaSalida;
  }
  //metodos
  public String getnombre (){
@@ -43,9 +49,24 @@ public class Cliente {
   
      this.numCelular = numCelular;
  }
+ public LocalDate getFechaIngreso(){
+       return FechaIngreso;
+ }
+ 
+ public void setFechaIngreso(LocalDate FechaIngreso){
+     this.FechaIngreso = FechaIngreso;
+ }
+ 
+ public LocalDate getFechaSalida (){
+     return FechaSalida;
+ }
+ 
+ public void setFechaSalida ( LocalDate FechaSalida){
+     this.FechaSalida = FechaSalida;
+ }
  public void mostrarInformacionCliente() {
      
-     System.out.println("cliente:" +nombre+ "- cedula:" +cedula+ "- Numero celular: " +numCelular);
+     System.out.println("cliente:" +nombre+ "- cedula:" +cedula+ "- Numero celular: " +numCelular+ "Fecha ingreso:"+FechaIngreso+ "Fecha salidas:"+FechaSalida);
  }
  
  

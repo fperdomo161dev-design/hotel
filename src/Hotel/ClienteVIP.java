@@ -8,6 +8,23 @@ package Hotel;
  *
  * @author User
  */
-public class ClienteVIP {
+import java.time.LocalDate;
+
+public class ClienteVIP extends Cliente {
+    
+    
+    public ClienteVIP (String nombre, String cedula, String numCelular, LocalDate FechaIngreso, LocalDate FechaSalida){
+        
+        super(nombre, cedula, numCelular, FechaIngreso, FechaSalida);
+        
+        
+    }
+    
+    
+    @Override
+    public void mostrarInformacionCliente() {
+        super.mostrarInformacionCliente(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        System.out.println("Tipo de cliente: VIP");
+    }
     
 }
