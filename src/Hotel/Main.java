@@ -58,7 +58,7 @@ public class Main{
         // Crear la lista de habitaciones disponibles
         ArrayList<Habitacion> habitaciones = new ArrayList<>();
         // Agregar habitaciones LowCost, Plata y Oro
-        for (int i = 101; i <= 105; i++) habitaciones.add(new Habitacion(i, "LowCost", 1));
+        for (int i = 101; i <= 107; i++) habitaciones.add(new Habitacion(i, "LowCost", 1));
         for (int i = 201; i <= 205; i++) habitaciones.add(new Habitacion(i, "LowCost", 2));
         for (int i = 301; i <= 305; i++) habitaciones.add(new Habitacion(i, "Plata", 3));
         for (int i = 401; i <= 405; i++) habitaciones.add(new Habitacion(i, "Plata", 4));
