@@ -59,10 +59,10 @@ public class Main{
         ArrayList<Habitacion> habitaciones = new ArrayList<>();
         // Agregar habitaciones LowCost, Plata y Oro
         for (int i = 101; i <= 107; i++) habitaciones.add(new Habitacion(i, "LowCost", 1));
-        for (int i = 201; i <= 205; i++) habitaciones.add(new Habitacion(i, "LowCost", 2));
-        for (int i = 301; i <= 305; i++) habitaciones.add(new Habitacion(i, "Plata", 3));
-        for (int i = 401; i <= 405; i++) habitaciones.add(new Habitacion(i, "Plata", 4));
-        for (int i = 501; i <= 505; i++) habitaciones.add(new Habitacion(i, "Oro", 5));
+        for (int i = 201; i <= 207; i++) habitaciones.add(new Habitacion(i, "LowCost", 2));
+        for (int i = 301; i <= 307; i++) habitaciones.add(new Habitacion(i, "Plata", 3));
+        for (int i = 401; i <= 407; i++) habitaciones.add(new Habitacion(i, "Plata", 4));
+        for (int i = 501; i <= 507; i++) habitaciones.add(new Habitacion(i, "Oro", 5));
 
         // Filtrar habitaciones disponibles según tipo de cliente
         ArrayList<Habitacion> disponibles = new ArrayList<>();
