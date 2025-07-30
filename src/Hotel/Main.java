@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
         // Crear el Scanner para leer entrada del usuario
         Scanner sc = new Scanner(System.in);
