@@ -65,4 +65,3 @@ package Hotel;
     }
 }
 
-
